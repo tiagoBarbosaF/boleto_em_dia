@@ -1,4 +1,4 @@
-# BilssUP
+# BillsUP
 
 Flutter app com o objetivo de controle de pagamentos de seus boletos físicos e digitais.
 
