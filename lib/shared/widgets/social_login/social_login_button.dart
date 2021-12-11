@@ -1,6 +1,6 @@
-import 'package:billsup/shared/themes/app_colors.dart';
-import 'package:billsup/shared/themes/app_images.dart';
-import 'package:billsup/shared/themes/app_text_styles.dart';
+import 'package:boleto_em_dia/shared/themes/app_colors.dart';
+import 'package:boleto_em_dia/shared/themes/app_images.dart';
+import 'package:boleto_em_dia/shared/themes/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class SocialLoginButton extends StatelessWidget {

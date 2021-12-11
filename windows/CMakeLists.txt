@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(billsup LANGUAGES CXX)
+project(boleto_em_dia LANGUAGES CXX)
 
-set(BINARY_NAME "billsup")
+set(BINARY_NAME "boleto_em_dia")
 
 cmake_policy(SET CMP0063 NEW)
 

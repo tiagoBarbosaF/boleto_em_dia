@@ -1,6 +1,6 @@
 {
-    "name": "billsup",
-    "short_name": "billsup",
+    "name": "boleto_em_dia",
+    "short_name": "boleto_em_dia",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

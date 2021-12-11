@@ -1,4 +1,4 @@
-package com.example.billsup
+package com.example.boleto_em_dia
 
 import io.flutter.embedding.android.FlutterActivity
 

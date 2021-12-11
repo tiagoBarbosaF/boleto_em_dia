@@ -1,7 +1,10 @@
-import 'package:billsup/shared/themes/app_colors.dart';
-import 'package:billsup/shared/themes/app_images.dart';
-import 'package:billsup/shared/themes/app_text_styles.dart';
-import 'package:billsup/shared/widgets/social_login/social_login_button.dart';
+// ignore_for_file: avoid_print
+
+import 'package:boleto_em_dia/modules/login/login_controller.dart';
+import 'package:boleto_em_dia/shared/themes/app_colors.dart';
+import 'package:boleto_em_dia/shared/themes/app_images.dart';
+import 'package:boleto_em_dia/shared/themes/app_text_styles.dart';
+import 'package:boleto_em_dia/shared/widgets/social_login/social_login_button.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -12,6 +15,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -31,11 +36,11 @@ class _LoginPageState extends State<LoginPage> {
             Positioned(
               left: 0,
               right: 0,
-              bottom: 220,
+              bottom: size.height * 0.3,
               child: Image.asset(AppImages.person),
             ),
             Positioned(
-              bottom: size.height * 0.10,
+              bottom: size.height * 0.1,
               width: size.width,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -51,9 +56,11 @@ class _LoginPageState extends State<LoginPage> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  SocialLoginButton(onTap: () {
-                    debugPrint('FUNCIONA');
-                  }),
+                  SocialLoginButton(
+                    onTap: () {
+                      controller.googleSignIn(context);
+                    },
+                  ),
                 ],
               ),
             )

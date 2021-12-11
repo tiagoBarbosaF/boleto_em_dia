@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.billsup">
+    package="com.example.boleto_em_dia">
    <application
-        android:label="billsup"
+        android:label="boleto_em_dia"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

@@ -1,6 +1,7 @@
-import 'package:billsup/shared/themes/app_colors.dart';
-import 'package:billsup/shared/themes/app_images.dart';
-import 'package:billsup/shared/themes/app_text_styles.dart';
+import 'package:boleto_em_dia/shared/auth/auth_controller.dart';
+import 'package:boleto_em_dia/shared/themes/app_colors.dart';
+import 'package:boleto_em_dia/shared/themes/app_images.dart';
+import 'package:boleto_em_dia/shared/themes/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -8,25 +9,33 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authController = AuthController();
+    authController.currentUser(context);
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Stack(
         children: [
           Center(child: Image.asset(AppImages.union)),
-          Center(child: Image.asset(AppImages.logoFull)),
           Positioned(
-            top: 460,
-            left: 130,
+            top: 240,
+            left: 0,
+            right: 0,
+            child: Image.asset(AppImages.logoFull),
+          ),
+          Positioned(
+            top: 400,
+            left: 0,
+            right: 0,
             child: RichText(
+              textAlign: TextAlign.center,
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: 'Bills',
-                    style: AppTextStyles.titleHomeRegular
-                  ),
+                      text: 'boleto em\n',
+                      style: AppTextStyles.splashHomeRegular),
                   TextSpan(
-                    text: 'UP',
-                    style: AppTextStyles.titleHomePrimary,
+                    text: 'dia ✔',
+                    style: AppTextStyles.splashHomePrimary,
                   ),
                 ],
               ),

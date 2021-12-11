@@ -1,4 +1,4 @@
-import 'package:billsup/shared/themes/app_colors.dart';
+import 'package:boleto_em_dia/shared/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,13 +8,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final titleHomePrimary = GoogleFonts.montserrat(
-    fontSize: 45,
+  static final splashHomePrimary = GoogleFonts.montserrat(
+    fontSize: 60,
     fontWeight: FontWeight.w600,
     color: AppColors.primary,
   );
-  static final titleHomeRegular = GoogleFonts.montserrat(
-    fontSize: 45,
+  static final splashHomeRegular = GoogleFonts.montserrat(
+    fontSize: 40,
     fontWeight: FontWeight.w400,
     color: AppColors.heading,
   );
@@ -33,10 +33,15 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.background,
   );
-  static final titleListTile = GoogleFonts.montserrat(
+  static final titleListTileRegular = GoogleFonts.montserrat(
     fontSize: 17,
     fontWeight: FontWeight.w400,
-    color: AppColors.heading,
+    color: AppColors.shape,
+  );
+  static final titleListTileBold = GoogleFonts.montserrat(
+    fontSize: 17,
+    fontWeight: FontWeight.w600,
+    color: AppColors.shape,
   );
   static final trailingRegular = GoogleFonts.montserrat(
     fontSize: 16,

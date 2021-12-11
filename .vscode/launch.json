@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "billsup",
+            "name": "boleto_em_dia",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "billsup (profile mode)",
+            "name": "boleto_em_dia (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
